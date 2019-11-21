@@ -37,6 +37,6 @@ public class AnimalTest {
         when(walkingBehaviour.walk()).thenReturn("I am walking");
         animal.walk();
         List<String> activities = animal.getActivities();
-        assertThat(activities.size()).isEqualTo(1);
+        assertThat(activities.get(0)).isEqualTo(Activities.WALK + ":" + "I am walking");
     }
 }
