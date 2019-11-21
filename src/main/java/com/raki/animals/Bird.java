@@ -5,8 +5,8 @@ import com.raki.animals.behaviours.SingingBehaviour;
 
 public class Bird extends Animal {
 
-    private FlyBehaviour flyBehaviour = new FlyBehaviour();
-    private SingingBehaviour singingBehaviour = new SingingBehaviour();
+    protected FlyBehaviour flyBehaviour = new FlyBehaviour();
+    protected SingingBehaviour singingBehaviour = new SingingBehaviour();
 
     public Bird() {
 
